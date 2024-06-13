@@ -1,36 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>teste de home</title>
-</head>
-<body>
     <style>
-        *{
+      * {
         margin: 0px;
         padding: 0px;
-    }
-    body{
+      }
+      body {
         background-color: rgba(0, 0, 0, 0.833);
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    img{
-        height: 100vh;
-    }
-    a#camera{
-        background-color: yellow;
-        display: flex;
+      }
+
+      .celular{
+        position: relative;
+        margin: auto;
+        background-image: url(imagens/frame-iphone.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 350px;
+        height: 650px;
+        margin-top: 2%;
+      }
+
+      .tela{
         position: absolute;
-        height: 44px;
-        width: 43px;
-        left: 177px;
-        top: 12px;
-    }
+        background-image: url(imagens/tela-home.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 277px;
+        height: 100%;
+        left: 23px;
+        top: 83px;
+      }
+
+      a#teste-youtube{
+        display: inline-block;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-color: yellow;
+        left: 15px;
+        top: 10px;
+      }
     </style>
-    <a id="camera" href="https://www.diariodepernambuco.com.br/static/app/noticia_127983242361/2019/10/28/808552/20191028091223150660a.jpg"></a>
-    <img src="imagens/tela-home.jpg" alt="">
-</body>
+  </head>
+  <body>
+    <section class="celular">
+        <section class="tela">
+            <a href="https://www.youtube.com/watch?v=Ltw2zE0Laig&list=RDMMLtw2zE0Laig&start_radio=1" id="teste-youtube"></a>
+            
+        </section>
+    </section>
+
+    
+  </body>
 </html>
